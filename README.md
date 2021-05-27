@@ -1,6 +1,12 @@
 # ✈️ Today-I-Learn ✈️
 
 ## 목차
-[Linux](./Linux)
+- [Java](./Java)
+- [Kafka](./Kafka)
+- [Linux](./Linux)
+- [Network](./Network)
+- [Web](./Web)
+- [ZooKeeper](./ZooKeeper)
+- [etc](./etc)
 
  
