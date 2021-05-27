@@ -4,7 +4,7 @@
 
 웹 템플릿에 ${x} 같은 식으로 작성해두고, 데이터와 함께 템플릿 엔진에 넣으면 ${x}에 적절한 값이 매핑되면서 화면을 만들어 낸다. 
 
-![image1](./Web/Images/Web-Template-Engine1.png)
+![image1](./Today-I-Learn/Web/Images/Web-Template-Engine1.png)
 
 참고 사이트
 
