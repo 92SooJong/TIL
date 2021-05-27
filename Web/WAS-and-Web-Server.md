@@ -1,8 +1,3 @@
-# WAS와 Web Server
-
-완성도: 완성
-최초작성일시: 2021년 4월 1일 오후 2:05
-태그: web
 
 ![](./Images/WAS-and-Web-Server1.png)
 
