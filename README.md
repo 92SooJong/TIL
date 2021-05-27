@@ -1,4 +1,4 @@
-# ✈️ Today-I-Learn ✈️
+# ✈️ Today I Learn ✈️
 
 ## 목차
 - [Java](./Java)
