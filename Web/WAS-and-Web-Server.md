@@ -1,6 +1,4 @@
 
-![](./Images/WAS-and-Web-Server1.png)
-
 # Web Server
 
 대표적인 Web Server로는 Apache가 있다. 클라이언트의 요청이 왔을때 정적인 웹페이지를 response하는 역할을 한다. 
