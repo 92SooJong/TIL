@@ -14,7 +14,7 @@ File system이란 파일(자료)를 사용자가 쉽게 접근 및 발견 할 �
 
 아래는 리눅스의 루트 파일시스템 아래에서 관리하는 파일 및 폴더의 용도.
 
-![File%20System%20e8484db257b84aea850ca8674146f6dc/Untitled.png](File%20System%20e8484db257b84aea850ca8674146f6dc/Untitled.png)
+![](./Images/File-System1.png)
 
 ## 기타
 
