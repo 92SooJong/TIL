@@ -7,4 +7,5 @@ Web Application 배포를 위한 파일이기 때문에 jsp, html, javascript같
 
 
 ![https://stackoverflow.com/questions/5871053/difference-between-jar-and-war-in-java](https://stackoverflow.com/questions/5871053/difference-between-jar-and-war-in-java)
+![](./Images/Jar-and-War1.png)
 
