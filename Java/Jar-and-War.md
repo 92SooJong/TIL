@@ -2,7 +2,7 @@
 Jar는 Java 라이브러리, 설정을 위한 각종 파일들을 담고 있는 자바 어플리케이션이다.
 
 ### War
-War는 servlet/jsp 컨테이너와 같이 Web Application 배포를 위해 필요한 파일들을 가지고 있다. 
+War는 servlet 컨테이너, 톰캣과 같이 Web Application 배포를 위해 필요한 파일들을 가지고 있다. 
 Web Application 배포를 위한 파일이기 때문에 jsp, html, javascript같은 파일들이 거의 필수적으로 들어있다. 
 
 ![](./Images/Jar-and-War1.png)
