@@ -7,6 +7,8 @@ Spring Web MVC는 Servlet API 상에서 작동하는 웹 프레임워크로서 �
 Spring MVC는 다른 웹 프레임워크와 마찬가지로 프론트 단에서 url 패턴을 중앙 Servlet이 분석하도록 설계되었다. 
 이 중앙 Servlet을 Spring MVC에선 DispatcherServlet이라고 부른다. 
 DispatcherServlet을 사용하기 위해선 Java Configuration이나 web.xml을 통해서 정의 및 매핑이 되어야 한다.
+DispatcherServlet은 Spring Configuration을 통해서 request 매핑이나 view 찾기, 예외 처리같은 작업들을 처리할 컴포넌트를 찾아준다.
+
 
 
 ----
