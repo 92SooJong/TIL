@@ -3,7 +3,9 @@ pom.xml에 maven 의존성이 정의되어 있긴하지만 유저가 이를 모�
 사용자는 parent 태그를 통해 pom.xml이 다른 의존성을 상속받도록 할때 사용한다. 
 Spring Boot의 경우 아래 사진과 같이 상속받는 것을 알 수 있다.
 
-![]()
+![](Images/Spring-parent-tag1.png)
+
+![](Images/Spring-parent-tag2.png)
 
 
 
