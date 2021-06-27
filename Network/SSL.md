@@ -1,11 +1,5 @@
 # SSL
 
-완성도: 완성
-최초작성일시: 2021년 5월 7일 오후 3:21
-태그: Network
-
-# SSL
-
 - 전송 계층 보안을 위해 만들어 졌다.
 - **HTTPS**는 SSL 프로토콜 위에서 돌아가는 HTTP를 의미한다.
 - SSL(Secure Socket Layer)과 TLS(Transport Layer Security Protocol)는 같은 의미이다.
