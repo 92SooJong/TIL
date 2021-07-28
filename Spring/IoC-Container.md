@@ -16,3 +16,6 @@ WebApplicationContext같은 것들을 통해 국제화, 이벤트 발행, 응용
 ApplicationContext는 BeanFactory의 완성된 superset이다.
 
 스프링에서 여러분이 Application backbone에서 만든 오브젝트는 Spring IoC 컨터이너에서 관리되고 있으며, 해당 오브젝트를 beans라고 부른다.
+
+A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container.
+bean은 Spring IoC container에 의해 관리되는 인스턴스화 되고, 조립된다. 
