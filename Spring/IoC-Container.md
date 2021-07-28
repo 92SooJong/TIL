@@ -25,6 +25,13 @@ ApplicationContext 인터페이스는 Spring IoC container를 의미하며, 인�
 
 컨테이너는 어떤 오브젝트를 인스턴스화 할지, 조립할지를 configuration 메타데이터를 읽어서 수행한다. configuration 메타데이터는 XML일수도 있고, Java 어노테이션일수도 있고, Java Code일수도 있다. 
 
+몇몇 ApplicationContext의 구현체는 Spring에서 기본제공합니다. 
+
+standalone application에서 ClassPathXmlApplicationContext 또는 FileSystemXmlApplicationContext 인스턴스를 생성하는 것이 일반적이다.
+
+XML은 전통적인 configuration 메타데이터이며, Java annotation 또는 code를 사용하면 XML confiugration 메타데이터 작성을 최소화할 수 있다. 
+
+대부분의 application 시나리오에서 사용자는 명시적으로 Spring IoC 컨테이너의 인스턴스를 생성하는 코드를 작성할 필요가 없다.
 
 
 
