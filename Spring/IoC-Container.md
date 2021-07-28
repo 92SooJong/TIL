@@ -17,5 +17,14 @@ ApplicationContext는 BeanFactory의 완성된 superset이다.
 
 스프링에서 여러분이 Application backbone에서 만든 오브젝트는 Spring IoC 컨터이너에서 관리되고 있으며, 해당 오브젝트를 beans라고 부른다.
 
-A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container.
 bean은 Spring IoC container에 의해 관리되는 인스턴스화 되고, 조립된다. 
+
+bean은 여러분이 만든 Application에 있는 다양한 object중 하나일 뿐이다. bean사이의 종속성은 컨테이너가 사용하는 구성 메타데이터에 반영됩니다.
+
+ApplicationContext 인터페이스는 Spring IoC container를 의미하며, 인스턴스화, 구성(Configuration), 빈의 조립들을 담당한다. 
+
+컨테이너는 어떤 오브젝트를 인스턴스화 할지, 조립할지를 configuration 메타데이터를 읽어서 수행한다. configuration 메타데이터는 XML일수도 있고, Java 어노테이션일수도 있고, Java Code일수도 있다. 
+
+
+
+
