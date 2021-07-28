@@ -34,4 +34,3 @@ XML은 전통적인 configuration 메타데이터이며, Java annotation 또는 
 대부분의 application 시나리오에서 사용자는 명시적으로 Spring IoC 컨테이너의 인스턴스를 생성하는 코드를 작성할 필요가 없다.
 
 
-
