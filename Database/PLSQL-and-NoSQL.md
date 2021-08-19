@@ -9,3 +9,9 @@ PL/SQL은 SQL문을 사용하여 프로그램을 작성할 수 있도록 확장�
 
 ## NoSQL
 비관계형 Database를 NoSQL이라고 부르며, Not Only SQL(SQL 뿐만이 아닌. 이라는 뜻)의 줄임말이다. 즉, SQL뿐만 아니라 다른 장점을 더 가지고 있다는 뜻. 대표적으로 MongoDB, CouchDB 등이 있다.
+
+## 표준문법에 대해
+각 SQL은 나름의 문법들이 있지만 미국 국립 표준 협회(American National Standards Institute,ANSI)에서 지정한 SQL 문법이 있다. 이를 ANSI Query라고 부른다. 
+ANSI를 제외하고 가장 유명한 문법은 Oracle 문법이다. 
+
+
