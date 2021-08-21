@@ -22,12 +22,9 @@ public String toString() {
 
 당신이 어플리케이션 전체에 적용하고 싶은 변수나 파라미터를 선언하고 싶은 경우에는 별도의 소스코드를 작성할 필요가 없는 XML이 어노테이션보단 좋은 선택이 된다.(XML문서에만 작성해두면 애플리케이션 어디서든지 사용이 가능하다.) 그런데 만약 몇몇 메소드만 서비스 로직을 처리하는 메소드로 표시하고 싶은 경우( 예. SpringMVC의 @Service 어노테이션) 어노테이션이 XML보다 더 좋은 선택이 된다. 소스의 메소드에 직접 어노테이션을 표기함으로써 개발자가 해당 메소드의 목적을 파악할 수 있게된다.
 
+어노테이션은 코드상에서 메타데이터를 나타낼수 있다. 어노테이션 등장 이전에는 개발자들이 각자 자신만의 방식으로 메타데이터를 표기했다. ( 마커용 인터페이스를 만든다던지, 주석을 달던지, 팀원간 약속된 키워드를 하는식으로 말이다. ) 하지만 어노테이션은 표준화되어있기 때문에 정형화된 메타데이터 표시가 가능하다.
+최근에는 대부분의 프레임워크들이 XML과 어노테이션을 함께 사용하고 있다. ( 프로젝트 전반에 대한 설정은 XML을 사용하고, Bean등록과 같이 선택적인 작업을 할때는 어노테이션을 사용한다. )
 
-
-
-Another important factor is that an annotation defines a standard way of defining metadata in code. Prior to annotations, people also used their own ways to define metadata. Some examples are using marker interfaces, comments, transient keywords, etc. Each developer needs his own way to decide metadata, but annotation standardized things.
-
-These days most frameworks use a combination of both XML and Annotations to leverage positive aspects of both.
 
 
 
