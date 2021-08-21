@@ -25,6 +25,31 @@ public String toString() {
 어노테이션은 코드상에서 메타데이터를 나타낼수 있다. 어노테이션 등장 이전에는 개발자들이 각자 자신만의 방식으로 메타데이터를 표기했다. ( 마커용 인터페이스를 만든다던지, 주석을 달던지, 팀원간 약속된 키워드를 하는식으로 말이다. ) 하지만 어노테이션은 표준화되어있기 때문에 정형화된 메타데이터 표시가 가능하다.
 최근에는 대부분의 프레임워크들이 XML과 어노테이션을 함께 사용하고 있다. ( 프로젝트 전반에 대한 설정은 XML을 사용하고, Bean등록과 같이 선택적인 작업을 할때는 어노테이션을 사용한다. )
 
+# 어노테이션은 어떻게 동작하고, 커스텀 어노테이션은 어떻게 만들까?
+
+```java
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.SOURCE)
+public @interface Override {
+}
+```
+```java
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+@interface Todo {
+    public enum Priority {LOW, MEDIUM, HIGH}
+    public enum Status {STARTED, NOT_STARTED}
+    String author() default "Yash";
+    Priority priority() default Priority.LOW;
+    Status status() default Status.NOT_STARTED;
+}
+
+```
+
+
+
+
+Writing annotations is very simple. You can compare annotation definition to an interface definition. Let’s have a look at two examples — one is the standard @Override annotation and the second is a custom annotation @Todo:
 
 
 
