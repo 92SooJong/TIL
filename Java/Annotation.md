@@ -101,4 +101,22 @@ public void someMethod() {
 
 
 
+So far so good. We have defined our custom annotation and applied it to some business logic methods. Now, it’s time to write a consumer. For that, we will need to use Reflection. If you are familiar with Reflection code, you know reflection provides Class, Method and Field objects. All of these have a getAnnotation()  method, which returns the annotation object. We need to cast this object as our custom annotation (after checking with instanceOf()) and then, we can call methods defined in our custom annotation. Let’s look at the sample code, which uses the above annotation:
+
+```
+Class businessLogicClass = BusinessLogic.class;
+
+for(Method method : businessLogicClass.getMethods()) {
+    Todo todoAnnotation = (Todo)method.getAnnotation(Todo.class);
+    if(todoAnnotation != null) {
+        System.out.println(" Method Name : " + method.getName());
+        System.out.println(" Author : " + todoAnnotation.author());
+        System.out.println(" Priority : " + todoAnnotation.priority());
+        System.out.println(" Status : " + todoAnnotation.status());
+    }
+}
+
+```
+
+
 
