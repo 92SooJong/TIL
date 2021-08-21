@@ -41,8 +41,6 @@ public @interface Override {
 
 @Override는 JVM이 사용하며 바이트코드 레벨에서 @Override에 대한 동작을 수행한다. 따라서 @Override는 개발자가 제어할수도 없고, 커스터마이징할 수도 없다. 따라서 필요한 어노테이션이 있다면 우리가 직접 작성해야한다. 
 
-
-
 Let’s understand the key terms used for writing annotations one by one. In the above examples, you will see annotations are used on annotations.
 
 J2SE 5.0 provides four annotations in the java.lang.annotation package that are used only when writing annotations:
@@ -59,7 +57,7 @@ J2SE 5.0 provides four annotations in the java.lang.annotation package that are 
     + ElementType.ANNOTATION_TYPE (on another annotation)
     + ElementType.PACKAGE (remember package-info.java)
 
-@Inherited  – 현재의 어노테이션을 적용할 서브클래스는 무엇인가?
++ @Inherited  – 현재의 어노테이션을 적용할 서브클래스는 무엇인가?
 
 
 
