@@ -61,6 +61,8 @@ J2SE 5.0 provides four annotations in the java.lang.annotation package that are 
 
 
 
+이제 직접 만든 @Todo 어노테이션을 살펴보자. 내부에 어떤 값들이 정의되어 있다. 
+어노테이션은 Primitive 타입과 String 그리고 enum을 지원한다. 모든 어트리뷰트는 메소드 형태로 정의되며 default값이 필요하다. 
 
 ```java
 @Target(ElementType.METHOD)
@@ -74,6 +76,29 @@ J2SE 5.0 provides four annotations in the java.lang.annotation package that are 
 }
 
 ```
+
+@Todo 어노테이션은 아래와 같이 사용하면 된다. 
+```java
+@Todo(priority = Todo.Priority.MEDIUM, author = "Yashwant", status = Todo.Status.STARTED)
+public void incompleteMethod1() {
+//Some business logic is written
+//But it’s not complete yet
+}
+```
+
+만약 아래와 같이 어트리뷰트가 하나밖에 없는 @Author 어노테이션을 만들었다면 value="Yashwant"로 작성하지 않고 "Yashwant"라고만 작성하면 된다. 
+```java
+@interface Author{
+    String value();
+}
+```
+```java
+@Author("Yashwant")
+public void someMethod() {
+}
+```
+
+
 
 
 
