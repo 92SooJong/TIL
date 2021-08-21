@@ -98,10 +98,9 @@ public void someMethod() {
 }
 ```
 
-
-
-
-So far so good. We have defined our custom annotation and applied it to some business logic methods. Now, it’s time to write a consumer. For that, we will need to use Reflection. If you are familiar with Reflection code, you know reflection provides Class, Method and Field objects. All of these have a getAnnotation()  method, which returns the annotation object. We need to cast this object as our custom annotation (after checking with instanceOf()) and then, we can call methods defined in our custom annotation. Let’s look at the sample code, which uses the above annotation:
+이제 어노테이션을 사용하기 위한 코드를 작성해보자. 여기서는 자바의 Reflection을 통해 어노테이션을 사용한다. (Reflection 간단설명 : 컴파일 시간(Compile Time)이 아니라 실행 시간(Run Time)에 동적으로 특정 오브젝트의 정보를 추출하거나, 오브젝트를 생성 할 수 있다. )
+Reflection은 클래스,메소드,필드 오브젝트를 제공하는데 각 오브젝트들은 모두 getAnnotation()이라는 메소드를 가지고 있다. getAnnotation()메소드는 오브젝트에 적용되어 있는 어노테이션을 반환해준다. 
+BusinessLogic 이라는 클래스에 들어있는 모든 Method를 For loop를 통해서 불러오고, 메소드에 @Todo 어노테이션이 있다면 결과를 출력하도록 한다. 
 
 ```java
 Class businessLogicClass = BusinessLogic.class;
