@@ -27,12 +27,24 @@ public String toString() {
 
 # 어노테이션은 어떻게 동작하고, 커스텀 어노테이션은 어떻게 만들까?
 
+어노테이션을 생성하는 방법은 인터페이스와 유사하다. 아래는 자바의 기본 어노테이션인 @Override와 직접 작성한 @Tode 어노테이션이다. 먼저 @Override 어노테이션부터 살펴보자.
+
 ```java
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.SOURCE)
 public @interface Override {
 }
 ```
+
+뭔가 수상한듯한 생김새를 하고 있다. 그렇다 사실 @Override는 어떤 동작도 수행하지 않는다. 그냥 단지 @Override를 가진 메소드가 부모클래스에 정의되어 있는지 체크만하는 역할을 한다. 
+
+
+
+
+Something seems fishy about @Override; it’s not doing anything — it simply checks to see if a method is defined in the parent class. Well, don’t be surprised; I am not kidding you. Override annotation’s definition has that much code only. This is the most important part to understand, and I am reiterating myself: Annotations are only metadata and do not contain any business logic. Tough to digest but true. If annotations do not contain the logic, then someone else must be doing something and that someone is the consumer of this annotation metadata. Annotations only provide information about the attribute (class/method/package/field) on which it is defined. The consumer is a piece of code that reads this information and then performs the necessary logic.
+
+
+
 ```java
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
@@ -45,11 +57,6 @@ public @interface Override {
 }
 
 ```
-
-
-
-
-Writing annotations is very simple. You can compare annotation definition to an interface definition. Let’s have a look at two examples — one is the standard @Override annotation and the second is a custom annotation @Todo:
 
 
 
