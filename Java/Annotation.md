@@ -36,12 +36,31 @@ public @interface Override {
 }
 ```
 
-뭔가 수상한듯한 생김새를 하고 있다. 그렇다 사실 @Override는 어떤 동작도 수행하지 않는다. 그냥 단지 @Override를 가진 메소드가 부모클래스에 정의되어 있는지 체크만하는 역할을 한다. 
+뭔가 수상한듯한 생김새를 하고 있다. @Override는 어떤 동작도 수행하지 않는다. 그냥 단지 @Override를 가진 메소드가 부모클래스에 정의되어 있는지 체크만하는 역할을 한다. ( 어노테이션은 단지 메타데이터를 의미할뿐 어떠한 비즈니스로직도 가지고 있지 않다는걸 기억해야한다. ) 
+어노테이션은 단지 어트리뷰트(클래스/메소드/패키지/필드)에 대한 정보를 제공할 뿐이다. 코드들은 이런 정보를 읽어서 적절한 조치를 취한다. 
+
+@Override는 JVM이 사용하며 바이트코드 레벨에서 @Override에 대한 동작을 수행한다. 따라서 @Override는 개발자가 제어할수도 없고, 커스터마이징할 수도 없다. 따라서 필요한 어노테이션이 있다면 우리가 직접 작성해야한다. 
 
 
 
+Let’s understand the key terms used for writing annotations one by one. In the above examples, you will see annotations are used on annotations.
 
-Something seems fishy about @Override; it’s not doing anything — it simply checks to see if a method is defined in the parent class. Well, don’t be surprised; I am not kidding you. Override annotation’s definition has that much code only. This is the most important part to understand, and I am reiterating myself: Annotations are only metadata and do not contain any business logic. Tough to digest but true. If annotations do not contain the logic, then someone else must be doing something and that someone is the consumer of this annotation metadata. Annotations only provide information about the attribute (class/method/package/field) on which it is defined. The consumer is a piece of code that reads this information and then performs the necessary logic.
+J2SE 5.0 provides four annotations in the java.lang.annotation package that are used only when writing annotations:
+
++ @Documented  – Javadocs에 해당 어노테이션을 추가할지 말지 결정한다. 
++ @Retention  – 언제 어노테이션이 사용되는지를 나타낸다.(=언제까지 어노테이션을 유지할까 = 어노테이션의 라이프사이클 )
++ @Target?  – 어노테이션이 어디에 적용될지를 나타낸다. ( 작성하지 않으면 7개의 모든 곳에 다 위치할 수 있다. )
+    + ElementType.TYPE (class, interface, enum)
+    + ElementType.FIELD (instance variable)
+    + ElementType.METHOD
+    + ElementType.PARAMETER
+    + ElementType.CONSTRUCTOR
+    + ElementType.LOCAL_VARIABLE
+    + ElementType.ANNOTATION_TYPE (on another annotation)
+    + ElementType.PACKAGE (remember package-info.java)
+
+@Inherited  – 현재의 어노테이션을 적용할 서브클래스는 무엇인가?
+
 
 
 
