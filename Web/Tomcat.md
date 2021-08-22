@@ -6,6 +6,8 @@
 
 ## Bootstrap.java
 - Tomcat을 실행하면 Bootstrap.java의 main 메소드가 실행된다. 
+- 톰캣 실행명령어가 "start"인 경우 init() -> load() -> start() 실행
+
 ```java
 /**
      * Main method and entry point when starting Tomcat via the provided
