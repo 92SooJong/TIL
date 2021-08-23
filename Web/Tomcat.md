@@ -81,5 +81,6 @@
     }
 ```
 
-
+## 참고링크
+- [톰캣, 인텔리제이 연동 설명](https://atoz-develop.tistory.com/entry/JAVA-%EC%9B%B9-%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD-IntelliJ-Tomcat-%EC%97%B0%EB%8F%99-%EB%B0%A9%EB%B2%95)
 
