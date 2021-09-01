@@ -5,13 +5,11 @@ public class Customer extends Thread{
     private TicketSystem ticketSystem;
     private String customerName;
 
-    public Customer(TicketSystem ticketSystem,ThreadGroup threadGroup,String threadName){
+    public Customer(TicketSystem ticketSystem, ThreadGroup threadGroup,String threadName){
         super(threadGroup,threadName);
         this.customerName = threadName;
         this.ticketSystem = ticketSystem;
     }
-
-
 
     @Override
     public void run() {
