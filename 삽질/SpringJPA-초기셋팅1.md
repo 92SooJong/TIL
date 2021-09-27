@@ -3,9 +3,9 @@
 ### 너무 낮은 버전으로 해도 에러가 발생하니 그나마(?) 최신인 8.0.25버전으로 추가함.
 ```xml
 <dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.25</version>
+	<groupId>mysql</groupId>
+	<artifactId>mysql-connector-java</artifactId>
+	<version>8.0.25</version>
 </dependency>
 ```
 ```
