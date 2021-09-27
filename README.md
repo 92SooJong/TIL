@@ -9,6 +9,7 @@
 - [ZooKeeper](./ZooKeeper)
 - [etc](./etc)
 - [삽질](./삽질)
+- [English](./English)
 
 
 ## 쓰다가 길어지면 블로그에 포스팅 하기!
