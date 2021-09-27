@@ -8,9 +8,7 @@
 - [Web](./Web)
 - [ZooKeeper](./ZooKeeper)
 - [etc](./etc)
-
-## 즐겨찾기
- - [Vi명령어](./Linux/Vi.md)
+- [삽질](./삽질)
 
 
 ## 쓰다가 길어지면 블로그에 포스팅 하기!
