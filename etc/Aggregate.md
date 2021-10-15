@@ -1,0 +1,4 @@
+- Aggregate는 서로 연관된 Entity의 묶음이다. 
+- 여기서 Entity는 JPA에서 DB Table과 매칭된 Entity를 말한다. 
+- Entity들의 묶음중에서 최상위 Entity가 존재할텐데 해당 Entity를 Root Entity라고 부른다. 
+- 주로 Root Entity의 이름이 Aggregate의 이름이 된다. 
