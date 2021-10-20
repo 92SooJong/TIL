@@ -14,7 +14,10 @@
 
 # ZooKeeper와 앙상블
 
-ZooKeeper는 코디네이션 서비스다. 코디네이션 서비스는 분산된 서버를 하나로 관리해주는 역할을 한다. ZooKeeper의 앙상블(클러스터)를 구성하기 위해선 항상 홀수개의 ZooKeeper서버가 준비되어야한다.  ZooKeeper의 앙상블에는 Leader와 Follower가 존재한다. 
+- ZooKeeper는 코디네이션 서비스다. 
+- 코디네이션 서비스는 분산된 서버를 하나로 관리해주는 역할을 한다. 
+- ZooKeeper의 앙상블(클러스터)를 구성하기 위해선 항상 홀수개의 ZooKeeper서버가 준비되어야한다.  
+- ZooKeeper의 앙상블에는 Leader와 Follower가 존재한다. 
 
 # zNode
 
