@@ -1,8 +1,5 @@
 # OSI 7 Layer Model
 
-완성도: 완성
-최초작성일시: 2021년 5월 6일 오후 3:52
-태그: Network
 
 ![](./Images/OSI-7-Layer-Model1.png)
 
