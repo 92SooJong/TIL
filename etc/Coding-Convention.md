@@ -1,7 +1,7 @@
 # Method 명명 규칙
 ### Validation 검사
 - `isDataValid()` 형태로 작성
-### Collection에 있는 데이터를 모두 제거
+### List에 있는 데이터를 모두 제거
 - `clearXXXList()`
 
 
