@@ -4,7 +4,7 @@
 ### 데이터 타입이 List이며 변수명이 abc의 데이터를 모두 제거
 - `clearAbcList()`
 ### abc라는 전역 변수에 값을 채우기 위한 메소드
-- `fillAbc()`
+- `fillAbcGlobalVariable()`
 
 
 # 변수 명명 규칙
