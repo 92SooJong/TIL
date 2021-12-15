@@ -24,3 +24,4 @@ REST 서버는 Client서버와 구분되어 있기 때문에 요청에 대해 PR
 
 # 참고
 [https://meetup.toast.com/posts/92](https://meetup.toast.com/posts/92)
+[https://juunone.netlify.app/web/fetch-api/](https://juunone.netlify.app/web/fetch-api/)
