@@ -39,3 +39,49 @@ public class Main {
   }
 }
 ```
+
+```java
+public class Main {
+
+
+    public static void main(String[] args){
+
+        User user = new User();
+        
+        // 익명 인터페이스 방식
+        user.setAccountPrinter(new AccountPrinter() {
+            @Override
+            public void printDepositWithUserName(int deposit) {
+                System.out.println("deposit = " + deposit);
+            }
+        });
+
+        // 익명인터페이스 
+        user.setAccountPrinter(deposit -> System.out.println("deposit = " + deposit));
+
+        
+
+    }
+
+
+}
+
+
+public class User {
+
+    AccountPrinter accountPrinter;
+
+    public void setAccountPrinter(AccountPrinter accountPrinter){
+        this.accountPrinter = accountPrinter;
+    }
+
+
+}
+
+public interface AccountPrinter {
+
+    void printDepositWithUserName(int deposit);
+
+}
+
+```
