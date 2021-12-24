@@ -8,6 +8,8 @@
 - static nested class는 자신을 감싸고 있는 클래스를 통해서 접근이 가능하다.
   - Top-Class의 인스턴스를 사용하지 않고도 nested class를 사용할 수 있다.
   - static nested class는 마치 Top-Class인것처럼 동작한다.
+  - 외부의 필드에 접근이 불가능하다. static 필드는 접근이 가능하다.
+  - 아니면 외부 클래스를 통해서 접근해야한다. 
 ```java
 OuterClass.StaticNestedClass nestedObject = new OuterClass.StaticNestedClass();
 ```
