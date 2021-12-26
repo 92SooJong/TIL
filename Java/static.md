@@ -10,6 +10,9 @@
   - static nested class는 마치 Top-Class인것처럼 동작한다.
   - 외부의 필드에 접근이 불가능하다. static 필드는 접근이 가능하다.
   - 아니면 외부 클래스의 인스턴스를 통해서 접근해야한다. 
+  - 정적 내부 클래스는 외부 클래스의 비 정적 멤버에 액세스 할 수 없습니다.
+  - 정적 내부 클래스는 멤버 변수에 액세스하기 위해 외부 클래스 참조가 필요하지 않습니다.
+  - 정적 클래스는 인스턴스화 될 수 없습니다. 따라서 메서드는 클래스 이름으로 직접 액세스 할 수 있습니다.
 ```java
 OuterClass.StaticNestedClass nestedObject = new OuterClass.StaticNestedClass();
 ```
