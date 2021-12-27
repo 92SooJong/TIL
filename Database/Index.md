@@ -5,12 +5,25 @@
 create index [인덱스명] on [테이블명](컬럼명1, 컬럼명2 ... );
 ```
 
+# Full Table Scan
+- 테이블에 있는 모든 데이터를 읽어서 원하는 데이터를 찾아낸다.
+
+# Binary Search
+
+# Binary Tree
+
+
+# B-Tree ( Balanced Tree )
+- Binary Tree와 달리 높이(Height)가 같은 Tree
+
 
 # Clustered Index
 - 군집화된 인덱스라는 뜻이며, 좀더 풀어서 설명하면 인덱스와 데이터가 한데 모여있다는 뜻이다.
 - 데이터가 이미 PK를 기준으로 정렬되어 있기때문에 범위검색할때 높은 효율을 보인다. 특정 범위를 그냥 긁어오기만 하면됨.
 - PK로 정렬을 해야되기 때문에 PK가 하나로 이뤄진 테이블일때 좋다.
 - 따라서 Auto_Increment로 PK를 따는게 좋다.
+- 테이블 중간에 Insert를 하게된다면 페이지 분할 작업을 수행해야하기때문에 성능 저하를 가져올 수 있다. 
+
 
 # Non-Clustered Index
 - 데이터와 연결되어 있지않고, 어떤 인덱스와 연결되어 있다.
@@ -21,4 +34,4 @@ create index [인덱스명] on [테이블명](컬럼명1, 컬럼명2 ... );
 - 중복된 데이터가 많을수록 Cardinality는 떨어진다. ( ex. 성별 같은 컬럼은 50대50이기때문에 굳이 인덱싱 테이블을 볼 필요가 없이 풀스캔하는게 낫다. ) 
 - 주민등록 번호같이 고유한 데이터일수록 Cardinality가 높다고 말한다. Cardinality가 높을수록 인덱스 사용을 고려하라!!
 
-# B-Tree ( Balanced Tree )
+
