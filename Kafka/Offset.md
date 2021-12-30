@@ -7,9 +7,10 @@
 - current offset 덕분에 Consumer는 같은 데이터를 2번이상 받지 않는다.
 
 # Committed offsets
+- Consumer는 데이터를 받고나서 데이터를 가공한 뒤에 DB에 저장하는 작업을 할것이다. 이런 작업을 성공적으로 마무리 했다면 Topic에게 보내준 데이터를 받아서 필요한 작업을 모두 완료했음을 알려줘야한다.
+- Committed offsets는 Consumer가 가장 최근 성공적으로 작업을 완료한 데이터의 위치를 가르키고 있다.
+- partition rebalance가 발생했을때 Committed offsets를 통해 Consumer가 어느 위치의 데이터까지 처리를 완료했는지 알 수 있게된다.
 
-- Consumer가 모든 작업을 처리하고 Commit 명령을 하면 Committed offset이 이동한다.
 
-만약 Current offsets 데이터를 읽다가 커밋을 미처하지 못하고 장애가 발생한다면 다음번 재실행시 Committed offsets부터 읽으면 된다. 
-
-Committed offsets은 Consumer가 확실히 해당 데이터를 수신하고 원하는 작업을 수행했다는 것을 의미한다.
+# 참고사이트
+[https://www.learningjournal.guru/courses/kafka/kafka-foundation-training/offset-management/](https://www.learningjournal.guru/courses/kafka/kafka-foundation-training/offset-management/)
