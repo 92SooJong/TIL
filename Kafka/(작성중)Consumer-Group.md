@@ -16,3 +16,6 @@ Every rebalance results in a new generation of the group.
 
 Each member in the group must send heartbeats to the coordinator in order to remain a member of the group. 
 If no hearbeat is received before expiration of the configured session timeout, then the coordinator will kick the member out of the group and reassign its partitions to another member.
+
+# 출처
+[https://docs.confluent.io/platform/current/clients/consumer.html#consumer-groups](https://docs.confluent.io/platform/current/clients/consumer.html#consumer-groups)
