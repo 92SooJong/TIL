@@ -14,6 +14,7 @@
 - [Web](./Web)
 - [ZooKeeper](./ZooKeeper)
 - [etc](./etc)
+- [shortcut](./shortcut)
 - [삽질](./삽질)
 
 
