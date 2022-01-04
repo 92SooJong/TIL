@@ -7,6 +7,7 @@
 - `Alt + 1` 프로젝트 탭으로 이동
 # Git
 - `Ctrl + k` commit 창을 호출한다.
+- `Ctrl + Shift + k` commit을 push하기 위한 창을 호출한다.
 # 자동생성
 - `Ctrl + Alt + v` 결과를 저장할 필드를 자동 생성한다.
 - `Alt + Insert + b` 클래스와 관련된 메소드 및 테스트 클래스를 생성하기 위한 탭을 보여준다.
