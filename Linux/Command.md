@@ -9,9 +9,9 @@
 `sudo hostnamectl set-hostname [새로운hosname]` 호스트명을 변경한다
 
 # 조회
-`sar -r 1` 메모리 사용량을 조회
-`hostname -I` IP주소를 확인
-`hostname` 호스트명을 조회
+- `sar -r 1` 메모리 사용량을 조회
+- `hostname -I` IP주소를 확인
+- `hostname` 호스트명을 조회
 
 # 기타
 `tar -xzf [tgz파일]` tgz 파일의 압축을 해제한다
