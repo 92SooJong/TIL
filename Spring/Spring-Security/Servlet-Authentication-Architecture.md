@@ -35,8 +35,28 @@ Collection<? extends GrantedAuthority> authorities = authentication.getAuthoriti
 3. authorities - 역할과 스코프처럼 사용자에 대한 좀더 높은 레벨의 권한을 의미한다.
 
 # GrantedAuthority
-- TODO 작성중.
+- 사용자에게 부여된 권한을 의미한다.
+- `GrantedAuthority`는 `Authentication.getAuthorities()` 메소드를 통해서 얻을 수 있다.
+- Spring Security에선 authorities를 일반적으로 "roles"라고 칭한다.
+- 만약 username/password 기반의 인증 방식을 사용할때 `UserDetailsService`를 통해서 `GrantedAuthority`가 로딩된다.
+- `GrantedAuthority`는 기본적으로 application 전체에 영향을 끼친다. 즉, 특정 도메인에 대해 일일히 별도의 권한을 부여하지 않아도 된다.
 
+# AuthenticationManager
+- `AuthenticationManager`는 Spring Security의 필터가 인증을 수행하는 방법을 정의하는 API입니다.
+- 주로 사용되는 `AuthenticationManager`의 구현체는 `ProviderManager`이다.
+- *TODO - AuthenticationManager 역할에 대한 내용 보완하기*
+
+# ProviderManager
+- `AuthenticationManager`의 구현체중 하나다.
+- `ProviderManager`는 `AuthenticationProvider`의 목록을 관리하며, 각각의 `AuthenticationProvider`는 인증 성공 및 실패를 판단한다.
+- `AuthenticationProvider` 목록에서 인증에 실패한 경우 `ProviderNotFoundException`이 발생한다.
+- *TODO - 사진 넣기*
+
+# AuthenticationProvider
+- `AuthenticationProvider` 특정 유형의 인증작업을 수행한다.
+- 하나 예를 들면 `AuthenticationProvider`의 구현체 중에 `DaoAuthenticationProvider`이 있는데 이는 username/password 기반의 인증을 수행할때 사용한다.
+- `JwtAuthenticationProvider`는 JWT 기반의 인증을 수행할 때 사용한다.
+- `ProviderManager`에 여러 `AuthenticationProvider`를 주입할 수 있다.
 
 
 # 참고
