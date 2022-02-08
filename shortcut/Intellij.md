@@ -16,9 +16,10 @@
 - `Ctrl + o` 오버라이딩 가능한 메소드의 목록을 보여준다
 # 복사
 - `Ctrl + d` 현재행을 복사한다.
-# 문자처리
+# 문자
 - `Shift + F6` 이름 바꾸기
 - `Ctrl + r` 문자 바꾸기
+- `Alt+Shift+Insert` Column 모드 toggle
 # 리팩터링
 - `Ctrl + Alt + m` 선택한 블럭 메소드로 만들기
 - `/** + enter` 주석 블록 생성
