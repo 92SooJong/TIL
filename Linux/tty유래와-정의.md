@@ -1,8 +1,5 @@
 Linux나 UNIX를 사용하다 보면 "TTY"라는 용어를 많이 듣게 되는데 "TTY"는 무엇일까?
 
-Do note that there’s no definitive answer to this, but it relates to how input/output devices interacted in the past.
-So, you will have to know a bit of history to get a clear picture.
-
 
 # 역사속의 TTY
 tty는 1830년대의 Teleprinter로부터 시작한다.
