@@ -1,4 +1,12 @@
-java의 call by value와 call by reference(처럼보이는)를 예제코드를 통해 살펴본다.
+# 정의
+- Call by value(값에 의한 호출)는 인자로 받은 값을 복사하여 처리를 한다. 
+    - 안전한 방법이며, 메모리 사용량은 Call by reference보다 많다.
+- Call by reference(참조에 의한 호출)는 인자로 받은 값의 주소를 참조하여 직접 값에 영향을 준다. 
+    - 직접 참조하기때문에 속도, 메모리면에서 Call by value에 비해 이점이 있으나, 값 변경의 위험이 있다.
+- 간단히 말해 값을 복사를 하여 처리를 하느냐, 아니면 직접 참조를 하느냐 차이인 것이다.
+
+
+# 예제코드
 
 ```java
 package com.company;
