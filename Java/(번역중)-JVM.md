@@ -15,8 +15,7 @@ JVM memory is divided into multiple parts: Heap Memory, Non-Heap Memory, and Oth
 ## Heap Memory
 Heap memory is the run time data area from which the memory for all java class instances and arrays is allocated. 
 - heap 메모리는 모든 클래스와 배열의 인스턴스가 할당되는 런타임 데이터 영역이다.
-- heap은 JVM이 시작될때 생성된다. 
-The heap is created when the Java Virtual Machine starts up and may increase or decrease in size while the application runs. 
+- heap은 JVM이 구동될때 함께 생성되며 어플리케이션의 동작에 따라 사이즈가 줄었다 늘었다한다.
 
 The size of the heap can be specified using –Xms VM option. The heap can be of fixed size or variable size depending on the garbage collection strategy. Maximum heap size can be set using –Xmx option. By default, the maximum heap size is set to 64 MB.
 
