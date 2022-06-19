@@ -175,3 +175,95 @@ sudo docker exec -i -t mysql_attach_test /bin/bash
 - `exit` 명령어로 빠져나와도 컨테이너가 종료되지 않는다.
 
 ![Untitled](./images/docker-engine/DockerEngine15.png)
+
+## 도커 볼륨
+
+- 이미 생성된 이미지는 어떠한 경우로도 변경되지 않는다.
+- mysql 컨테이너를 생성했다면, 컨테이너에 운영중 생성된 데이터들이 저장된다. 이때 컨테이너를 삭제하면 컨테이너에 존재하던 데이터도 함께 삭제된다.
+- 컨테이너에 있는 데이터의 영속성을 확보하기 위해 볼륨을 활용한다.
+
+### 호스트 볼륨 공유
+
+- `-v` 옵션을 통해 호스트의 `/home/wordpress_db` 디렉터리와 컨테이너의 `/var/lib/mysql` 을디렉터리를 공유한도록 한다.
+- 호스트에 해당 디렉터리가 없다면 자동으로 생성해준다.
+- 이미 호스트에 존재하는 디렉터리인 경우 호스트의 디렉터리를 컨테이너 디렉터리에 덮어쓰기 한다. 즉, 호스트가 우선순위가 더 높다.
+
+```bash
+sudo docker run -d \
+--name wordpressdb_hostvolume \
+-e MYSQL_ROOT_PASSWORD=password \
+-e MYSQL_DATABASE=wordpress \
+-v /home/wordpress_db:/var/lib/mysql \
+mysql:5.7
+```
+
+- wordpress 웹서버 컨테이너를 실행한다.
+
+```bash
+sudo docker run -d \
+-e WORDPRESS_DB_PASSWORD=password \
+--name wordpress_hostvolume \
+--link wordpressdb_hostvolume:mysql \
+-p 80 \
+wordpress
+```
+
+![Untitled](./images/docker-engine/DockerEngine16.png)
+
+### 볼륨 컨테이너
+
+- `-v` 옵션을 사용하는 컨테이너와 연결하는 방법이다. 한마디로 `-v` 옵션을 사용하는 컨테이너를 브리지로 사용하는것이다
+- `--volumes-from` 옵션을 사용하면 된다.
+
+![Untitled](./images/docker-engine/DockerEngine17.png)
+
+### 도커 볼륨
+
+- `volume create` 명령어를 통해 도커 자체에서 제공하는 볼륨 기능을 사용할 수 있다.
+- 해당 볼륨은 도커 엔진에 의해 제어된다.
+
+```bash
+sudo docker volume create --name myvolume
+```
+
+- 여러 종류의 스토리지를 사용할 수 있으며, 아래는 호스트(local)의 스토리지를 사용하도록 한다.
+
+```bash
+sudo docker volume ls
+```
+
+![Untitled](./images/docker-engine/DockerEngine18.png)
+
+- myvolume_1,myvolume_2 컨테이너가 myvolume 볼륨 컨테이너를 사용하도록 한다.
+- myvolume_1 컨테이너에 접속해서 /root 디렉토리 아래에 파일을 생성하면, myvolume_2 컨테이너의 /root 디렉토리 파일에서 확인이 가능하게 된다.
+
+```bash
+sudo docker run -i -t --name myvolume_1 \
+-v myvolume:/root/ \
+ubuntu:14.04
+```
+
+```bash
+sudo docker run -i -t --name myvolume_2 \
+-v myvolume:/root/ \
+ubuntu:14.04
+```
+
+- `inspect` 명령어를 통해서 도커 볼륨이 호스트의 어떤 디렉터리에서 저장되고 있는지 확인할 수 있다.
+
+```bash
+sudo docker inspect --type volume myvolume
+```
+
+![Untitled](./images/docker-engine/DockerEngine19.png)
+
+## 도커 네트워크
+
+- 호스트에서 `ifconfig` 명령어를 입력하면 실행중인 컨테이너의 개수 만큼 veth가 생성된것을 확인할 수 있다.
+
+![Untitled](./images/docker-engine/DockerEngine20.png)
+
+- eth0는 공인 IP 또는 내부 IP가 할당되어 실제로 외부와 통신할 수 있는 호스트의 네트워크 인터페이스이다.
+- docker0는 eth0와 veth의 중간 다리 역할을 한다.
+
+![Untitled](./images/docker-engine/DockerEngine21.png)
