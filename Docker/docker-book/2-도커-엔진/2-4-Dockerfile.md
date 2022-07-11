@@ -7,7 +7,7 @@
 
 - 샘플 파일을 생성한다.
 
-![Untitled](./images/Dockerfile/Untitled.png)
+![Untitled](./images/2-4/Untitled.png)
 
 - Dockerfile을 작성한다.
 - `FROM` 은 생성할 이미지의 베이스가 될 이미지를 뜻한다. Dockerfile에 반드시 한 번 이상 입력해야한다.
@@ -35,7 +35,7 @@ EXPOSE 80
 CMD apachectl -DFOREGROUND
 ```
 
-![Untitled](./images/Dockerfile/Untitled%201.png)
+![Untitled](./images/2-4/Untitled%201.png)
 
 ## Dockerfile 빌드
 
@@ -52,8 +52,7 @@ sudo docker build -t mybuild:0.0 ./
 - 가능하면 빌드 컨텍스트에는 필요한 파일만 두는게 좋다.
 - 아니면 .dockerignore 파일을 컨텍스트 빌드에 작성하도록 한다.
 
-![Untitled](./images/Dockerfile/Untitled%202.png)
+![Untitled](./images/2-4/Untitled%202.png)
 
 - 각 Step은 Dockerfile에 작성된 명령어를 의미한다. 각 Step이 실행될때 마다 새로운 컨테이너가 하나씩 생성되며 이를 이미지로 커밋한다. 이미지의 빌드가 완료되면 임시로 생성된 컨테이너들은 모두 삭제된다.
-    
-    ![Untitled](./images/Dockerfile/Untitled%203.png)
+  ![Untitled](./images/2-4/Untitled%203.png)
