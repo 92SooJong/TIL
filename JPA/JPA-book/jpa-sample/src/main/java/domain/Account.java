@@ -2,7 +2,7 @@ package domain;
 
 import javax.persistence.*;
 
-@Entity
+//@Entity
 @Table(name = "TABLE_ACCOUNT")
 public class Account {
 

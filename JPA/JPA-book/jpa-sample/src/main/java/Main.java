@@ -1,7 +1,4 @@
-import domain.Account;
-import domain.Portfolio;
-import domain.Stock;
-import domain.User;
+import domain.*;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -22,17 +19,19 @@ public class Main {
         try{
             tx.begin();
 
-            // 계좌A 생성
-            Account account1 = new Account();
-            account1.setAccountName("accountA");
-            account1.setDeposit(10000);
-            em.persist(account1);
+            Board board = new Board();
+            board.setId("1");
+            board.setTitle("제목A");
+            board.setVersion(1);
+            em.persist(board);
 
-            // 사용자 생성
-            User user = new User();
-            user.setUserName("SooJong");
-            user.addAccount(account1); // 계좌 추가
-            em.persist(user);
+            tx.commit();
+
+            tx.begin();
+
+            Board borad = em.find(Board.class, 1);
+
+
 
             tx.commit();
         } catch (Exception e){
