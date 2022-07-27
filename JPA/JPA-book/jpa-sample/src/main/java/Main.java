@@ -19,18 +19,13 @@ public class Main {
         try{
             tx.begin();
 
-            Parent parent = new Parent();
-            parent.setId1("myId1");
-            parent.setId2("myId2");
-            parent.setName("soojong");
-            em.persist(parent);
+            ParentId id1 = new ParentId("myId1","myId2");
+            ParentId id2 = new ParentId("myId1","myId2");
 
-            ParentId parentId = new ParentId("myId1", "myId2");
-            Parent findParent = em.find(Parent.class, parentId);
+            System.out.println("id1.equals(id2) = " + id1.equals(id2));
+            System.out.println("id1.hashCode() = " + id1.hashCode());
+            System.out.println("id2.hashCode() = " + id2.hashCode());
 
-            System.out.println("findParent.getId1() = " + findParent.getId1());
-            System.out.println("findParent.getId2() = " + findParent.getId2());
-            System.out.println("findParent.getName() = " + findParent.getName());
 
             tx.commit();
         } catch (Exception e){
