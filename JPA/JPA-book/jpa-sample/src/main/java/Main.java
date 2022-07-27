@@ -19,19 +19,18 @@ public class Main {
         try{
             tx.begin();
 
-            Board board = new Board();
-            board.setId("1");
-            board.setTitle("제목A");
-            board.setVersion(1);
-            em.persist(board);
+            Parent parent = new Parent();
+            parent.setId1("myId1");
+            parent.setId2("myId2");
+            parent.setName("soojong");
+            em.persist(parent);
 
-            tx.commit();
+            ParentId parentId = new ParentId("myId1", "myId2");
+            Parent findParent = em.find(Parent.class, parentId);
 
-            tx.begin();
-
-            Board borad = em.find(Board.class, 1);
-
-
+            System.out.println("findParent.getId1() = " + findParent.getId1());
+            System.out.println("findParent.getId2() = " + findParent.getId2());
+            System.out.println("findParent.getName() = " + findParent.getName());
 
             tx.commit();
         } catch (Exception e){
