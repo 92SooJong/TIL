@@ -3,10 +3,12 @@ package domain;
 import javax.persistence.*;
 
 @Entity
-@IdClass(GrandChildId.class)
 public class GrandChild {
 
-    @Id
+    @EmbeddedId
+    private GrandChildId id;
+
+    @MapsId("childId")
     @ManyToOne
     @JoinColumns({
             @JoinColumn(name = "PARENT_ID"),
@@ -14,10 +16,6 @@ public class GrandChild {
     })
     private Child child;
 
-    @Id @Column(name = "GRANDCHILD_ID")
-    private String id;
-
     private String name;
-
 
 }

@@ -4,22 +4,24 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 
-
+@Embeddable
 public class ChildId implements Serializable {
 
-    private String parent;
-    private String childId;
+    private String parentId; // @MapsId("parentId")로 매핑
+
+    @Column(name = "CHILD_ID")
+    private String id;
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ChildId childId1 = (ChildId) o;
-        return Objects.equals(parent, childId1.parent) && Objects.equals(childId, childId1.childId);
+        ChildId childId = (ChildId) o;
+        return Objects.equals(parentId, childId.parentId) && Objects.equals(id, childId.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(parent, childId);
+        return Objects.hash(parentId, id);
     }
 }

@@ -1,12 +1,16 @@
 package domain;
 
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
 import java.io.Serializable;
 import java.util.Objects;
 
-
+@Embeddable
 public class GrandChildId implements Serializable {
 
-    private ChildId child;
+    private ChildId childId; // @MapsId("childId")로 매핑이된다.
+
+    @Column(name = "GRANDCHILD_ID")
     private String id;
 
     @Override
@@ -14,11 +18,11 @@ public class GrandChildId implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         GrandChildId that = (GrandChildId) o;
-        return Objects.equals(child, that.child) && Objects.equals(id, that.id);
+        return Objects.equals(childId, that.childId) && Objects.equals(id, that.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(child, id);
+        return Objects.hash(childId, id);
     }
 }
