@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 public class Parent {
 
-    @Id
+    @Id @GeneratedValue
     @Column(name = "PARENT_ID")
     private String id;
     private String name;

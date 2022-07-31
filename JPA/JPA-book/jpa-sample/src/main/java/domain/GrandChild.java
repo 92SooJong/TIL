@@ -5,17 +5,12 @@ import javax.persistence.*;
 @Entity
 public class GrandChild {
 
-    @EmbeddedId
-    private GrandChildId id;
-
-    @MapsId("childId")
-    @ManyToOne
-    @JoinColumns({
-            @JoinColumn(name = "PARENT_ID"),
-            @JoinColumn(name = "CHILD_ID")
-    })
-    private Child child;
-
+    @Id @GeneratedValue
+    @Column(name = "GRANDCHILD_ID")
+    private Long id;
     private String name;
 
+    @ManyToOne
+    @JoinColumn(name = "CHILD_ID")
+    private Child child;
 }

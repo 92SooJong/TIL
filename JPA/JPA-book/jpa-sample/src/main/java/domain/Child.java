@@ -5,12 +5,13 @@ import javax.persistence.*;
 @Entity
 public class Child {
 
-    @EmbeddedId
-    private ChildId id;
+    @Id @GeneratedValue
+    @Column(name = "CHILD_ID")
+    private Long id;
+    private String name;
 
-    @MapsId("parentId") // ChildId.parentId 매핑
     @ManyToOne
     @JoinColumn(name = "PARENT_ID")
-    public Parent parent;
+    private Parent parent;
 
 }
