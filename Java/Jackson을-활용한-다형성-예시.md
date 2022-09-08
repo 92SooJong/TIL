@@ -8,7 +8,7 @@ implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.3'
 
 spring-boot-starter-web 의존성을 사용하고 있다면 자동으로 추가된다.
 
-![Untitled](./images/Jackson을-활용한-다형성-예시/Untitled.png)
+![Untitled](./Images/Jackson을-활용한-다형성-예시/Untitled.png)
 
 # JSON to Object
 
@@ -50,7 +50,7 @@ public class App {
 
 정상적으로 JSON 형태의 String이 Shop 오브젝트로 매핑되었다.
 
-![Untitled](./images/Jackson을-활용한-다형성-예시/Untitled%201.png)
+![Untitled](./Images/Jackson을-활용한-다형성-예시/Untitled%201.png)
 
 # 참고 사이트
 
