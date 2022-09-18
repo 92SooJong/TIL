@@ -7,7 +7,6 @@
 - [Database](./Database)
 - [DesignPattern](./DesignPattern)
 - [Docker](./Docker)
-- [Etc](./Etc)
 - [Git](./Git)
 - [JPA](./JPA)
 - [Java](./Java)
@@ -20,6 +19,7 @@
 - [Trouble-Shooting](./Trouble-Shooting)
 - [Web](./Web)
 - [ZooKeeper](./ZooKeeper)
+- [etc](./etc)
 
 ## 쓰다가 길어지면 블로그에 포스팅 하기!
 
