@@ -15,4 +15,9 @@ CHIP DMux {
 
     PARTS:
     // Put your code here:
+    Xor(a=in,b=sel,out=o1);
+    And(a=o1,b=in,out=a);
+    Nand(a=in,b=sel,out=o2);
+    Not(in=o2,out=b);
+
 }
