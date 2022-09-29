@@ -1,6 +1,6 @@
 # LocalDateTime
 
-java.time 패키지를 확인하면 시간과 관련된 클래스를 확인할 수 있다.
+java.base 모듈에 있는 java.time 패키지를 확인하면 시간과 관련된 클래스를 확인할 수 있다.
 
 ![Untitled](./images/Untitled.png)
 
