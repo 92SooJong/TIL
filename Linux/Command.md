@@ -15,6 +15,9 @@
 - `readlink -f $0` 현재 파일($0)에 대한 심볼릭 링크를 마지막 뎁스(-f)까지 탐색한다.
 - `dirname a.txt` a.txt 파일이 속한 directory를 반환한다
 
+# 검색
+- `find ./ -iname 'rmi*'` 경로 하위에 존재하는 파일을 검색한다.
+
 # 기타
 - `tar -xzf [tgz파일]` tgz 파일의 압축을 해제한다
 - `sudo hostnamectl set-hostname [새로운hosname]` 호스트명을 변경한다
