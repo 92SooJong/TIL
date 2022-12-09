@@ -22,7 +22,7 @@
 - [etc](./etc)
 
 ## 이관중
-- # [블로그로 이동하기](https://92soojong.github.io/)Hugo를 기반으로 만든 TIL용 정적 페이지 블로그
+[블로그로 이동하기](https://92soojong.github.io/)Hugo를 기반으로 만든 TIL용 정적 페이지 블로그
 
 ## 쓰다가 길어지면 블로그에 포스팅 하기!
 
