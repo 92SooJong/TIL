@@ -1,5 +1,5 @@
 # 이관중... ✈️
-[Hugo를 기반으로 만든 TIL용 정적 페이지 블로그](https://92soojong.github.io/)
+## [Hugo를 기반으로 만든 TIL용 정적 페이지 블로그](https://92soojong.github.io/)
 
 ----
 # Today I Learn 
