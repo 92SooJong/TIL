@@ -1,4 +1,8 @@
-# ✈️ Today I Learn ✈️
+# 이관중... ✈️
+[Hugo를 기반으로 만든 TIL용 정적 페이지 블로그](https://92soojong.github.io/)
+
+----
+# Today I Learn 
 
 ## 목차
 
@@ -20,9 +24,6 @@
 - [Web](./Web)
 - [ZooKeeper](./ZooKeeper)
 - [etc](./etc)
-
-## 이관중
-[Hugo를 기반으로 만든 TIL용 정적 페이지 블로그로 이동하기](https://92soojong.github.io/)
 
 ## 쓰다가 길어지면 블로그에 포스팅 하기!
 
