@@ -1,4 +1,3 @@
-# General Immersion Day(10/18) 정리
 
 # Infra Overview
 
@@ -86,7 +85,7 @@ EC2의 상태는 크게 아래 3개로 구성됩니다.
 
 상세한 정보는 아래 사이트에서 확인 가능합니다. AWS에선 매년 개선된 인스턴스를 만들어 내기 때문에 가능하면 최신 세대의 인스턴스를 선택하는것이 비용절감에 효과적입니다.
 
-**https://aws.amazon.com/ko/ec2/instance-types/**
+**https:/aws.amazon.com/ko/ec2/instance-types/**
 
 ## Elastic Load Balancing(ELB)
 
