@@ -1,8 +1,4 @@
-# 이관중... ✈️
-## [Hugo를 기반으로 만든 TIL용 정적 페이지 블로그](https://92soojong.github.io/)
-
-----
-# Today I Learn 
+# Today I Learn ✈️
 
 ## 목차
 
@@ -18,13 +14,39 @@
 - [Kafka](./Kafka)
 - [Linux](./Linux)
 - [Network](./Network)
-- [Shortcut](./Shortcut)
 - [Spring](./Spring)
 - [Trouble-Shooting](./Trouble-Shooting)
 - [Web](./Web)
 - [ZooKeeper](./ZooKeeper)
+- [build-tool](./build-tool)
 - [etc](./etc)
+- [Eedis](./Eedis)
+- [Shortcut](./Shortcut)
+- [회고](./회고)
 
 ## 쓰다가 길어지면 블로그에 포스팅 하기!
 
 [티스토리](https://soojong.tistory.com/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
