@@ -1,9 +1,3 @@
----
-title: "Redis Data Types(Stirng, Lists)"
-date: 2022-11-11T22:55:00+09:00
-tags: ["Redis","Korean"]
----
-
 # Redis Data Types
 
 ## Keys
