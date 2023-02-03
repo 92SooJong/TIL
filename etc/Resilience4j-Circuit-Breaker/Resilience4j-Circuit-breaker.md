@@ -5,7 +5,7 @@
 - 서킷 브레이커는 `CLOSED, OPEN, HALF_OPEN` 3가지의 상태를 가진다
 - 여기에 2개의 특수한 상태인 `DISABLED, FORCED_OPEN` 이 있다.
 
-![Untitled](./Images/Resilience4j-Circuit-Breaker/Untitled.png)
+![Untitled](./Untitled.png)
 
 - 서킷 브레이커는 Sliding window를 통해 호출 횟수를 저장 또는 집계한다.
 - count-based 방식과 time-based 방식을 제공한다.

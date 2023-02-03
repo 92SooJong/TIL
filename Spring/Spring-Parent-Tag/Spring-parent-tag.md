@@ -3,9 +3,9 @@
 - 이렇게 분리된 maven 의존성을 관리할 수 있도록 하는게 parent tag다.
 - 사용자는 parent 태그를 통해 pom.xml이 다른 의존성을 상속받도록 한다. Spring Boot의 경우 아래 사진과 같이 상속받는 것을 알 수 있다.
 
-![](Images/Spring-parent-tag1.png)
+![](./Spring-parent-tag1.png)
 
-![](Images/Spring-parent-tag2.png)
+![](./Spring-parent-tag2.png)
 
 
 ----
