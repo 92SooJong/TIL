@@ -29,6 +29,11 @@ For example, you might create a route that directs all traffic destined for a sp
 
 > 특정 서브넷으로 향하는 모든 트래픽은 virtual private gateway로 가도록하고 그외 트래픽을 network interface로 보내는 route를 만들 수 있다. 이 경우 destination은 CIDR 블럭으로 정의될 것이다. routing behavior에 따라 다르겠지만 target은 virtual private gateway 이거나 network interface일 수 있다.
 
+## does AWS's route table have a priority?
+
+> Route table내에 우선순위를 지정할 수 있으며, 만약 별도의 우선순위를 지정하지 않는다면 생성, 수정이 빠른 순으로 우선순위를 매긴다.
+
 # Main Route Table
 VPC를 보면 Main Route 테이블이 있는데, 이는 VPC생성시 부여되는 default route table을 의미한다. main route table은 삭제할 수 없다.
 별다른 설정을 하지 않았다면 subnet들은 main route table에 할당된다.
+
