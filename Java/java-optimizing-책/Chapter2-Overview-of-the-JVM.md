@@ -53,9 +53,9 @@ javac의 역할은 Java code를 바이트 코드를 포함한 .class 파일로 �
 
 컴파일된 클래스파일은 잘 정의된 구조를 가지고 있다. 클래스 파일은 VM 명세에 지정된 컴포넌트로 구성된다. 
 
-![Untitled](/images/java/java-optimizing/2/Untitled.png)
+![Untitled](./images/Untitled.png)
 
-![Untitled](/images/java/java-optimizing/2/Untitled%201.png)
+![Untitled](./images/Untitled%201.png)
 
 모든 클래스들은  매직넘버 0xCAFEBABE로 시작한다. 첫 4바이트는 클래스 파일 형식에 대한 적합성을 나타낸다. 그뒤에 오는 4 바이트는 클래스 파일을 컴파일하는데 사용되는 minor , major 버전을 나타낸다. 이를 이용해서 클래스로더는 JVM과 버전이 매칭이 되는지 확인할 수 있다. 
 
@@ -71,7 +71,7 @@ This class, Superclass, Interface는 constant pool의 인덱스로 존재한다.
 
 아래 그림을 통해서 좀더 바이트 구조를 쉽게 암기할 수 있다.
 
-![Untitled](/images/java/java-optimizing/2/Untitled%202.png)
+![Untitled](./images/Untitled%202.png)
 
 아래 간단한 코드를 컴파일 해보자.
 
@@ -88,7 +88,7 @@ public class HelloWorld {
 
 클래스 파일에 대한 바이트 코드를 확인할 수 있다. 메소드가 두개로 보이는데 컴파일 과정에서 자동으로 생성자 메소드가 생성되었기 때문이다. 
 
-![Untitled](/images/java/java-optimizing/2/Untitled%203.png)
+![Untitled](./images/Untitled%203.png)
 
 생성자에 있는 aload_0는 `this` 에 대한 레퍼런스를 뜻하며 스택의 첫번째에 위치하게 됩니다.
 
@@ -120,7 +120,7 @@ HotSpot 가상 머신은 자바의 핵심기능이며, C와 C++과 비견될만�
 
 런타임시에 발생하는 동작을 실시간으로 분석하고 이를 성능 최적화에 활용한다.
 
-![Untitled](/images/java/java-optimizing/2/Untitled%204.png)
+![Untitled](./images/Untitled%204.png)
 
 # Introducing Just-In-Time Compilation
 
