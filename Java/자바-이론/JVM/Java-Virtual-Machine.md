@@ -46,7 +46,10 @@ JVM은 `ClassLoader.loadClass()` 메소드를 사용해서 class를 메모리에
 
 Note : JVM은 멀티 쓰레드이다. 따라서 똑같은 클래스를 (거의) 동시에 초기화하는 경우가 발생한다. 이 경우 동시성 이슈가 있을 수 있으니, 코드를 작성할 때 이런 환경을 이해하고 Thread-safe하게 코드를 작성하도록 하자.
 
+# Runtime Data Area
+Runtime Data Area는 5개의 컴포넌트로 이뤄진다.
 
+![](./images/2023-03-06-23-31-58.png)
 
-
-
+## Method Area
+상수 풀, 필드, 메소드 데이터, 생성자, 메소드를 위한 코드와 같은 클래스 레벨의 데이터
