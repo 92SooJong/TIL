@@ -52,4 +52,25 @@ Runtime Data Area는 5개의 컴포넌트로 이뤄진다.
 ![](./images/2023-03-06-23-31-58.png)
 
 ## Method Area
-상수 풀, 필드, 메소드 데이터, 생성자, 메소드를 위한 코드와 같은 클래스 레벨의 데이터
+클래스 레벨의 데이터가 여기에 기록된다. 클래스 레벨의 데이터라 함은 런타임 상수 풀, 필드, 메소드 데이터, 메소드를 위한 코드, 생성자를 의미한다.
+
+데이터를 저장하기에 메모리의 용량이 충분치 않다면 `OutOfMemoryError`가 발생한다.
+
+아래 코드를 보자
+```java
+public class Employee {
+  
+  private String name;
+  private int age;
+  
+  public Employee(String name, int age) {
+  
+    this.name = name;
+    this.age = age;
+  }
+}
+```
+
+이 예시 코드에서 필드 레벨 데이터인 `name`과 `age` 그리고 생성자의 상세 정보들이 method area영역에 저장된다.
+
+method area는 가상 머신이 실행될때 생성되며, JVM에는 1개의 method area영역만 존재한다.
