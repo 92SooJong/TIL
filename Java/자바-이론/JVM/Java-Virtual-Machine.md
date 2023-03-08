@@ -85,5 +85,7 @@ Employee employee = new Employee();
 
 heap 영역도 VM이 실행될때 생성되며 JVM 당 1개만 존재한다.
 
-Note - Method 와 Head 영역은 multiple 쓰레드를 위해서 메모리 공간을 공유한다. 여기에 저장된 데이터는 thread safe하지 않다(이거 맞는말인지 확인 해봐야할듯...?!)
+Note - Method 와 Heap 영역은 multiple 쓰레드를 위해서 메모리 공간을 공유한다. 여기에 저장된 데이터는 thread safe하지 않다(이거 맞는말인지 확인 해봐야할듯...?!)
+
+확인결과 - Method Area와 Heap Area가 직접 메모리를 공유해서 사용한다는 뜻이 아니고, Thread가 Method Area와 Heap Area 양쪽에 접근해서 필요한 정보를 가져온다는 뜻이었음. (https://qr.ae/prSJFZ)
 
