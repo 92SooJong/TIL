@@ -1,5 +1,5 @@
 # Java Virtual Machine
-
+원서 링크 - https://www.freecodecamp.org/news/jvm-tutorial-java-virtual-machine-architecture-explained-for-beginners/
 # 구성
 JVM은 아래와 같이 크게 5개의 컴포넌트로 구분이 가능하다. 
 ![](./images/2023-03-05-18-53-26.png)
@@ -74,3 +74,16 @@ public class Employee {
 이 예시 코드에서 필드 레벨 데이터인 `name`과 `age` 그리고 생성자의 상세 정보들이 method area영역에 저장된다.
 
 method area는 가상 머신이 실행될때 생성되며, JVM에는 1개의 method area영역만 존재한다.
+
+## Heap Area
+모든 Object와 Object와 연결되어 있는 인스턴스들이 여기에 저장된다. 코드를 수행하는 런타임 시점에 유동적으로 메모리에 인스턴스 및 배열이 적재된다. 
+
+아래 코드에 따르면 Employee 클래스의 인스턴스가 heap 영역에 적재된다.
+```java
+Employee employee = new Employee();
+```
+
+heap 영역도 VM이 실행될때 생성되며 JVM 당 1개만 존재한다.
+
+Note - Method 와 Head 영역은 multiple 쓰레드를 위해서 메모리 공간을 공유한다. 여기에 저장된 데이터는 thread safe하지 않다(이거 맞는말인지 확인 해봐야할듯...?!)
+
