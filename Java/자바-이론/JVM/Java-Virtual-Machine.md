@@ -89,3 +89,32 @@ Note - Method 와 Heap 영역은 multiple 쓰레드를 위해서 메모리 공�
 
 확인결과 - Method Area와 Heap Area가 직접 메모리를 공유해서 사용한다는 뜻이 아니고, Thread가 Method Area와 Heap Area 양쪽에 접근해서 필요한 정보를 가져온다는 뜻이었음. (https://qr.ae/prSJFZ)
 
+## Stack Area
+JVM에서 쓰레드가 생성될때 마다, 각 쓰레드 별로 runtime stack이 생성된다. 쓰레드가 사용하게 되는 모든 변수, 메소드 콜, 부분적 결과(메소드의 결과값)들이 스택에 기록된다.
+
+쓰레드가 JVM이 제공 가능한 사이즈 보다 더큰 stack을 요구하게 될 경우 `StackOverflowError`가 발생하게 된다.
+
+모든 메소드 호출마다, Stack Frame이 만들어지며 메소드 호출이 끝나면 Stack Frame은 제거된다.
+
+Stack Frame은 3개의 서브 파트로 구분된다.
+- Local Variables - 각 Stack Frame은 local variable이라고 알려진 변수 배열을 가지게 된다. 배열의 크기는 컴파일 시점에 확정된다.
+- Operand Stack - 각 Stack Frame은 Operand Stack라고 알려진 LIFO stack을 가지게 된다. Operand Stack은 runtime시에 발생하는 연산들을 처리하기 위한 workspace역할을 한다. 최대 사이즈는 compile 시점에 확정된다.
+- Frame Data - 메소드와 관련된 symbol들이 저장되는 공간이다. (메소드의 파라미터, 변수, operand stack의 상태) exception의 경우에 사용하는 catch bloack에 대한 정보가 여기에 저장된다.
+
+아래 예시코드를 한번 보자.
+
+```java
+double calculateNormalisedScore(List<Answer> answers) {
+  
+  double score = getScore(answers);
+  return normalizeScore(score);
+}
+
+double normalizeScore(double score) {
+  
+  return (score – minScore) / (maxScore – minScore);
+}
+```
+
+answer과 score 변수는 Local Variables 배열에 저장된다. Operand Stack은 뺄셈과 나눗셈 연산에 필요한 연산자와 변수를 담게 된다. Stack Area는 Thread간에 공유되지 않기 떄문에 Thread safe하다.
+
