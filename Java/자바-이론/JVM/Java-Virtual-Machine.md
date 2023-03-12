@@ -118,3 +118,12 @@ double normalizeScore(double score) {
 
 answer과 score 변수는 Local Variables 배열에 저장된다. Operand Stack은 뺄셈과 나눗셈 연산에 필요한 연산자와 변수를 담게 된다. Stack Area는 Thread간에 공유되지 않기 떄문에 Thread safe하다.
 
+## Program Counter (PC) Registers
+JVM은 다중 쓰레드를 지원한다. 각 쓰레드는 자신만의 PC Register를 가지고 있으며 PC Register는 현재 실행 중인 JVM 명령어의 주소를 가지고 있다.
+
+명령어가 실행될떄 PC register는 다음 작업으로 업데이트 된다.
+
+## Native Method Stacks
+JVM은 native methods를 지원하는 stack들을 가지고 있다. 이 메소드들은 Java가 아닌 C, C++로 작성되어 있다. 
+
+새로운 쓰레드 마다, 별도의 native method stack이 할당된다.
