@@ -127,3 +127,15 @@ JVM은 다중 쓰레드를 지원한다. 각 쓰레드는 자신만의 PC Regist
 JVM은 native methods를 지원하는 stack들을 가지고 있다. 이 메소드들은 Java가 아닌 C, C++로 작성되어 있다. 
 
 새로운 쓰레드 마다, 별도의 native method stack이 할당된다.
+
+# Execution Engine
+main 메모리에 바이트코드가 로드되면, 프로그램 실행이라는 디테일한 작업이 가능하다는 뜻이다. Execution Engine은 아래에 있는 3개의 클래스들을 실행하면서 코드를 실행한다.
+하지만, 프로그램을 실행하기 전에 바이트 코드는 machine language 명령어로 변환될 필요가 있다.
+
+![](2023-03-13-21-48-27.png)
+
+## Interpreter
+interpeter는 한줄 한줄 bytecode 명령어를 읽고 실행한다. 이런식으로 한줄씩 읽기때문에 interpreter의 작업은 느리다. 또다른 단점은 메소드가 여러번 호출될때 매번 새로운 메소드를 처리하는것과 같이 작업을 해야한다.
+
+## JIT Compiler
+JIT Compiler는 interpreter의 단점을 극복하기 위해 등장했다. Execution Engine은 처음에는 bytecode를 실행하기 위해서 interpreter를 사용한다. 그러다가 반복된 작업을 만나게 되면 JIT compiler를 사용한다.
