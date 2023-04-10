@@ -12,6 +12,8 @@
 - [Java](./Java)
 - [Javascript](./Javascript)
 - [Kafka](./Kafka)
+- [Kubernetes](./Kubernetes)
+- [Learn-From-Work](./Learn-From-Work)
 - [Linux](./Linux)
 - [Network](./Network)
 - [Security](./Security)
