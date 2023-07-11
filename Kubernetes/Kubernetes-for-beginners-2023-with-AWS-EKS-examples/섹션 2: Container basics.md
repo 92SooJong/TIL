@@ -36,7 +36,8 @@ DockerHub is one of the most popular public places to store image.
 
 If you have public image, you can extend the image. Docker is immutable file so you are just extending files.
 
-도커 설치시에 봤던 GPG 키가 뭔데?
+# 설치
+
 
 Mac인 경우는 Mac for Desktop을 설치하면 된다.
 
@@ -46,9 +47,8 @@ Mac인 경우는 Mac for Desktop을 설치하면 된다.
 - 퍼블릭 레지스트리에 있는 hello-world를 가져와서 실행함.
 - 이미지를 pulling하고 컨테이너로 만드는것까지 함.
 
-매번 sudo 치기 귀찮으니까 아래 문서를 참고해서 도커용 그룹을 만들어 모자.
+# Dockerfile 예시
 
-`docker image ls` 명령어로 이미 로컬에 있는 이미지 목록 조회 가능.
 
 Dockerfile은 이미지를 레이어처럼 쌓은 파일이라고 보면 됨. (참고로 이미지는 immutable함)
 
@@ -71,3 +71,17 @@ CMD ["runserver", "0.0.0.0:8000"] # runserver 0.0.0.0:8000을 실행한다
 
 ```
 
+
+# 명령어
+
+
+`docker image ls` 명령어로 이미 로컬에 있는 이미지 목록 조회 가능.
+
+# 숙제
+
+
+도커 설치시에 봤던 GPG 키가 무엇인가?
+
+sudo없이 docker 명령어를 실행할수 있도록 세팅하라.
+
+`docker exec -ti a80ebd9d01cc python manage.py migrate`  명령어는 무슨 의미인가?
