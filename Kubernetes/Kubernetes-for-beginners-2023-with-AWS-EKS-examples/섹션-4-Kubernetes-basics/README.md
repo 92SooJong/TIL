@@ -17,7 +17,7 @@ Kube api는 REST api이며, 클러스터를 관리하는 기능들을 제공한�
 
 일반적으로 Kube api server는 control plane 노드에서 Pod 형태로 동작한다.
 
-![Image.png](%EC%84%B9%EC%85%98%204:%20Kubernetes%20basics.assets/Image.png)
+![Image.png](Image.png)
 
 # EKS
 
@@ -35,5 +35,5 @@ Raft protocol을 사용한다.(이 부분은 다시 학습을 해보자)
 
 Kublet은 Node의 심장같은 존재다. 모든 노드가 Kublet을 가지고 있다. kube api가 다른 노드와 통신할때 각 노드에 있는 kublet과 통신을 수행한다.
 
-![Image.png](%EC%84%B9%EC%85%98%204:%20Kubernetes%20basics.assets/Image%20(2).png)
+![Image.png](Image%20(2).png)
 
