@@ -2,17 +2,17 @@
 
 # Container
 
-![Image.png](%EC%84%B9%EC%85%98%202:%20Container%20basics.assets/Image.png)
+![Image.png](Image.png)
 
-![Image.png](%EC%84%B9%EC%85%98%202:%20Container%20basics.assets/Image%20(2).png)
+![Image.png](Image%20(2).png)
 
-![Image.png](%EC%84%B9%EC%85%98%202:%20Container%20basics.assets/Image%20(3).png)
+![Image.png](Image%20(3).png)
 
-![Image.png](%EC%84%B9%EC%85%98%202:%20Container%20basics.assets/Image%20(4).png)
+![Image.png](Image%20(4).png)
 
-![Image.png](%EC%84%B9%EC%85%98%202:%20Container%20basics.assets/Image%20(5).png)
+![Image.png](Image%20(5).png)
 
-![Image.png](%EC%84%B9%EC%85%98%202:%20Container%20basics.assets/Image%20(6).png)
+![Image.png](Image%20(6).png)
 
 # Docker
 
