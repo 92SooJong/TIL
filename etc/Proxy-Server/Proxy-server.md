@@ -9,4 +9,4 @@
 - 주로 도메인 주소를 통해 구분한다.
 - 하나의 Proxy Server가 Forward , Backward를 모두 다 할 수 있다.
 
-![](./Proxy-server1.png)
+![](./Proxy-server2.png)
