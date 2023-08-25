@@ -1,9 +1,3 @@
----
-title: "Gradle : SourceSet"
-date: 2023-01-24T22:44:00+09:00
-tags: ["Gradle","Korean"]
----
-
 # 정의
 Java source 파일과 Resource 파일의 논리적 그룹을 의미한다. 아래와 같이 작성하면서 Compile시에 원하지 않는 패키지를 제외할 수 있다.
 ```

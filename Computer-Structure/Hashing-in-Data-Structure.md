@@ -1,10 +1,8 @@
----
-title: "Hashing in Data Structure"
-date: 2022-11-18T22:00:00+09:00
-tags: ["HashMap","CS","English"]
----
+# Reference
 
 [https://www.scaler.com/topics/data-structures/hashing-in-data-structure/](https://www.scaler.com/topics/data-structures/hashing-in-data-structure/)
+
+# Complexity
 
 Time complexity - O(log n)
 

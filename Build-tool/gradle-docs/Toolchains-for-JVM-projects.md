@@ -1,9 +1,3 @@
----
-title: "Gradle : Toolchains for JVM projects"
-date: 2023-01-21T16:00:00+09:00
-tags: ["Gradle","Korean"]
----
-
 default 설정에 따라 gradle은 프로젝트의 빌드, gradle 자체를 실행하는데 있어서 똑같은 자바 버전을 사용한다. (참고. gradle은 Java로 구현되어 있음.)
 By default, Gradle uses the same Java version for running Gradle itself and building JVM projects.
 

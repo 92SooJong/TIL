@@ -1,9 +1,3 @@
----
-title: "Web : X-Forwarded-For(XFF)"
-date: 2023-01-29T14:17:00+09:00
-tags: ["Web","Korean"]
----
-
 # 정리
 The "X-Forwarded-For" (XFF) attribute is an HTTP header field that is used to identify the originating IP address of a client connecting to a web server through an HTTP proxy or a load balancer. The XFF header is used to prevent IP spoofing and other types of IP address-based attacks.
 

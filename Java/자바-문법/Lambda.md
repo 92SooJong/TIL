@@ -1,9 +1,3 @@
----
-title: "Lambda"
-date: 2021-12-17T22:55:00+09:00
-tags: ["Java", "Korean"]
----
-
 # 정의
 - lambda는 Java 8에서 처음으로 등장했다.
 - lambda는 이름이 없는 함수, 익명함수 정도로 이해하면 되겠다. 

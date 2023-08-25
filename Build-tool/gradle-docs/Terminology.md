@@ -1,9 +1,3 @@
----
-title: "Gradle : Terminology"
-date: 2023-01-21T16:00:00+09:00
-tags: ["Gradle","Korean"]
----
-
 # 원문 링크
 [https://docs.gradle.org/current/userguide/what_is_gradle.html#terminology](https://docs.gradle.org/current/userguide/what_is_gradle.html#terminology)
 

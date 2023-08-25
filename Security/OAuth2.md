@@ -1,9 +1,3 @@
----
-title: "OAuth 2.0"
-date: 2023-01-04T20:00:00+09:00
-tags: ["OAuth","Korean"]
----
-
 # 사전지식
 ## Authentication vs Authorization
 - OAuth 2.0은 Authorization(인가)를 위해 만들어졌다.(Authentication을 위해 만들어 진게 아님!)

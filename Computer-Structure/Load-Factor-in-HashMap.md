@@ -1,9 +1,3 @@
----
-title: "Load Factor in HashMap"
-date: 2022-11-25T18:00:00+09:00
-tags: ["HashMap", "CS", "Korean"]
----
-
 # Map
 
 Simple view of Java’s data strcutrue class hierachy

@@ -1,5 +1,5 @@
 
-![](./Images/WAS-and-Web-Server1.png)
+![](./images/WAS-and-Web-Server1.png)
 
 # Web Server
 
@@ -21,11 +21,11 @@ Web Server는 어떤 하나의 프로그램일 수도, Web Server가 설치된 �
 - Container란 JSP, Servlet을 실행시킬 수 있는 소프트웨어를 말한다.
 - WAS는 JSP, Servlet 구동 환경을 제공한다.
 
-![](./Images/WAS-and-Web-Server2.png)
+![](./images/WAS-and-Web-Server2.png)
 
 아래와 같은 구조도 가능하다. WAS가 자체적으로 Web Server를 내장하는 경우다. 바로 위 구조와 성능상 차이가 별로 없다고 한다. 
 
-![](./Images/WAS-and-Web-Server3.png)
+![](./images/WAS-and-Web-Server3.png)
 
 Web Server가 필요한 이유는?
 

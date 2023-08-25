@@ -1,10 +1,4 @@
----
-title: "Load Factor And Rehashing"
-date: 2022-11-25T21:40:00+09:00
-tags: ["Hashing", "CS", "Korean"]
----
-
-# **Complexity and Load Factor**
+# Complexity and Load Factor
 
 HashMap의 Insert 작업은 Key-Value가 나눠져서 진행된다. 
 

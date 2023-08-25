@@ -1,8 +1,9 @@
 # Today I Learn ✈️
 
 ## 목차
-
 - [AWS](./AWS)
+- [Anything-Learned-From-Work](./Anything-Learned-From-Work)
+- [Build-Tool](./Build-Tool)
 - [Computer-Structure](./Computer-Structure)
 - [Database](./Database)
 - [DesignPattern](./DesignPattern)
@@ -13,22 +14,19 @@
 - [Javascript](./Javascript)
 - [Kafka](./Kafka)
 - [Kubernetes](./Kubernetes)
-- [Learn-From-Work](./Learn-From-Work)
 - [Linux](./Linux)
 - [Network](./Network)
+- [README.md](./README.md)
+- [Redis](./Redis)
 - [Security](./Security)
 - [Spring](./Spring)
 - [Trouble-Shooting](./Trouble-Shooting)
 - [Web](./Web)
 - [ZooKeeper](./ZooKeeper)
-- [build-tool](./build-tool)
 - [etc](./etc)
-- [Redis](./Redis)
-- [Shortcut](./Shortcut)
-- [회고](./회고)
+- [강연](./강연)
 
 ## 쓰다가 길어지면 블로그에 포스팅 하기!
-
 [티스토리](https://soojong.tistory.com/)
 
 

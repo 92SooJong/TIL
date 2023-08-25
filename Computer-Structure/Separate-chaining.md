@@ -1,9 +1,3 @@
----
-title: "Separate Chaining"
-date: 2022-11-20T22:00:00+09:00
-tags: ["Hash","CS","Korean"]
----
-
 # Separate Chaining
 
 Separate Chaining는 충돌 해결을 위한 테크닉이다.
