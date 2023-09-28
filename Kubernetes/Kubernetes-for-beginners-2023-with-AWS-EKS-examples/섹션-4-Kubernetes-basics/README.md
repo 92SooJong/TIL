@@ -17,7 +17,7 @@ Kube api는 REST api이며, 클러스터를 관리하는 기능들을 제공한�
 
 일반적으로 Kube api server는 control plane 노드에서 Pod 형태로 동작한다.
 
-![Image.png](image.png)
+![Image.png](./image1.png)
 
 # EKS
 
@@ -35,7 +35,7 @@ Raft protocol을 사용한다.(이 부분은 다시 학습을 해보자)
 
 Kublet은 Node의 심장같은 존재다. 모든 노드가 Kublet을 가지고 있다. kube api가 다른 노드와 통신할때 각 노드에 있는 kublet과 통신을 수행한다.
 
-![Image.png](image2.png)
+![Image.png](./image2.png)
 
 # Namespace
 
@@ -61,7 +61,7 @@ Namespace를 사용하면 Node level, Resource level에 대한 논리적인 구�
 
 `kubectl config view`를 통해서도 현재 config 확인이 가능하다. (중요정보는 인코딩되어 출력됨!)
 
-![](image3.png)
+![](./image3.png)
 
 `kubectl delete ns [namespace명]`을 통해서 namespace를 삭제할 수 있다.
 
@@ -99,7 +99,7 @@ apiVersion - Kube API서버로 요청시 사용할 API의 버전을 나타낸다
 
 cueenr-context - The current context we are operating in.
 
-![](image4.png)
+![](./image4.png)
 
 ## Context에 namespace 부여하기.
 
