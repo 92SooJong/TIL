@@ -1,0 +1,1 @@
+템플릿 엔진 의존성(예. `org.springframework.boot:spring-boot-starter-thymeleaf`)을 등록하지 않고 View를 호출하면 404에러가 return된다.
