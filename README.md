@@ -7,6 +7,7 @@
 - [Computer-Structure](./Computer-Structure)
 - [CSS](./CSS)
 - [Database](./Database)
+- [Databricks](./Databricks)
 - [DesignPattern](./DesignPattern)
 - [Docker](./Docker)
 - [Git](./Git)
