@@ -10,6 +10,7 @@
 - [Databricks](./Databricks)
 - [DesignPattern](./DesignPattern)
 - [Docker](./Docker)
+- [Figma](./Figma)
 - [Git](./Git)
 - [JPA](./JPA)
 - [Java](./Java)
