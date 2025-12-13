@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\n불필요한 파일 및 폴더 정리\n\n- Build-tool/gradle-docs 삭제\n- Computer-Structure/The-Elements-of-Computing-Systems 삭제\n- Object/1장-협력하는-객체들의-공동체.md 삭제\n- etc/Coding-Convention.md 삭제\n- README.md 삭제\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n)\")"
+    ]
+  }
+}
