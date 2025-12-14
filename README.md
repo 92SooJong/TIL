@@ -5,13 +5,11 @@
 - [AWS](./AWS)
 - [Build-tool](./Build-tool)
 - [Computer-Structure](./Computer-Structure)
-- [CSS](./CSS)
 - [Database](./Database)
 - [Databricks](./Databricks)
 - [DesignPattern](./DesignPattern)
 - [Docker](./Docker)
 - [etc](./etc)
-- [Figma](./Figma)
 - [Git](./Git)
 - [Java](./Java)
 - [Javascript](./Javascript)
@@ -26,7 +24,6 @@
 - [Spring](./Spring)
 - [Trouble-Shooting](./Trouble-Shooting)
 - [Web](./Web)
-- [ZooKeeper](./ZooKeeper)
 - [강연](./강연)
 
 
